@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +29,10 @@ public class MainActivity extends AppCompatActivity
 
             Animation animation = AnimationUtils.loadAnimation(this, R.anim.scene_enter);
             sceneIv.startAnimation(animation);
+        }
+        else
+        {
+            finish();
         }
     }
 
